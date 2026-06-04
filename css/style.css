@@ -220,7 +220,7 @@ body {
     
     /* Llamamos a la animación: nombre | duración | dirección | infinito */
     animation: movimientoColor 3s ease infinite;
-    box-shadow: 0 0 10px rgba(126, 182, 187, 0.5); /* Resplandor suave */
+    box-shadow: 0 0 10px rgba(1, 204, 231, 0.89); /* Resplandor suave */
 }
 
 /* Definición del movimiento */
@@ -233,6 +233,7 @@ body {
 
 .cuadro-habilidad-nombre {
     background-color: #1acab6;
+    border-bottom: #264653;
     color: #F9F7F3;
     padding: 15px;
     text-align: center;
