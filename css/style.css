@@ -205,35 +205,71 @@ body {
    Sección Habilidades
    ========================================================================== */
 
-/* Fondo claro 2 para continuar la alternancia visual */
-.seccion-habilidades {
-    background-color: #F9F7F3;
-    padding: 100px 0;
+* ==========================================================================
+   Efecto de Movimiento de Colores en Barras
+   ========================================================================== */
+
+/* La línea de progreso ahora tiene un gradiente de 3 colores */
+.barra-progreso-linea.animada {
+    /* Usamos tus colores: Acento (#0FA3B1) y Secundario (#2A9D8F) */
+    background: linear-gradient(
+        270deg, 
+        #0FA3B1, 
+        #2A9D8F, 
+        #0FA3B1
+    );
+    background-size: 400% 400%; /* Tamaño grande para que el gradiente se mueva */
+    height: 100%;
+    border-radius: 4px;
+    
+    /* Llamamos a la animación: nombre | duración | dirección | infinito */
+    animation: movimientoColor 3s ease infinite;
+    box-shadow: 0 0 10px rgba(15, 163, 177, 0.5); /* Resplandor suave */
 }
 
-/* Distribución horizontal de las 4 tarjetas de habilidades */
-.habilidades-flex {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+/* Definición del movimiento del gradiente */
+@keyframes movimientoColor {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
-/* Bloques de habilidades individuales con color de fondo contrastante */
-.tarjeta-habilidad {
+/* Estilos de soporte para el diseño que ya tenías */
+.bloque-habilidad-completo {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.cuadro-habilidad-nombre {
     background-color: #2A9D8F;
     color: #F9F7F3;
-    padding: 25px;
+    padding: 15px;
     text-align: center;
     border-radius: 8px;
     font-weight: 600;
-    flex: 1;
-    font-size: 1.1rem;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
 }
 
-.tarjeta-habilidad:hover {
-    background-color: #264653;
+.barra-progreso-fondo {
+    background-color: rgba(38, 70, 83, 0.1);
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.habilidad-porcentaje {
+    display: block;
+    text-align: right;
+    color: #264653;
+    font-weight: 700;
+    font-size: 0.9rem;
 }
 
 /* ==========================================================================
