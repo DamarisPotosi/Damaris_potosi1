@@ -205,18 +205,15 @@ body {
    Sección Habilidades
    ========================================================================== */
 
-* ==========================================================================
-   Efecto de Movimiento de Colores en Barras
-   ========================================================================== */
-
 /* La línea de progreso ahora tiene un gradiente de 3 colores */
 .barra-progreso-linea.animada {
     /* Usamos tus colores: Acento (#0FA3B1) y Secundario (#2A9D8F) */
-    background: linear-gradient(
+    background-color: linear-gradient(
         270deg, 
         #0FA3B1, 
-        #2A9D8F, 
-        #0FA3B1
+        
+        #1cd1bc, 
+        #1ad0e0
     );
     background-size: 400% 400%; /* Tamaño grande para que el gradiente se mueva */
     height: 100%;
@@ -224,7 +221,7 @@ body {
     
     /* Llamamos a la animación: nombre | duración | dirección | infinito */
     animation: movimientoColor 3s ease infinite;
-    box-shadow: 0 0 10px rgba(15, 163, 177, 0.5); /* Resplandor suave */
+    box-shadow: 0 0 10px rgba(16, 76, 82, 0.5); /* Resplandor suave */
 }
 
 /* Definición del movimiento del gradiente */
