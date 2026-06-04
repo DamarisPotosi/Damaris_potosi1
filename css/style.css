@@ -223,18 +223,7 @@ body {
     box-shadow: 0 0 10px rgba(126, 182, 187, 0.5); /* Resplandor suave */
 }
 
-/* Definición del movimiento del gradiente */
-@keyframes movimientoColor {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+/* Definición del movimiento */
 
 /* Estilos de soporte para el diseño que ya tenías */
 .bloque-habilidad-completo {
@@ -243,7 +232,7 @@ body {
 }
 
 .cuadro-habilidad-nombre {
-    background-color: #2A9D8F;
+    background-color: #1acab6;
     color: #F9F7F3;
     padding: 15px;
     text-align: center;
