@@ -220,7 +220,7 @@ body {
     
     /* Llamamos a la animación: nombre | duración | dirección | infinito */
     animation: movimientoColor 3s ease infinite;
-    box-shadow: 0 0 10px rgba(43, 62, 65, 0.89); /* Resplandor suave */
+    box-shadow: 0 0 10px rgba(98, 209, 226, 0.89); /* Resplandor suave */
 }
 
 /* Definición del movimiento */
@@ -232,7 +232,7 @@ body {
 }
 
 .cuadro-habilidad-nombre {
-    background-color: #0a5f55;
+    background-color: #0d9b8a;
     border-bottom: #06445c;
     color: #F9F7F3;
     padding: 15px;
@@ -240,10 +240,6 @@ body {
     border-radius: 8px;
     font-weight: 600;
     margin-bottom: 15px;
-
-    .bocuadro .habilidad-porcentaje:hover {
-    background-color: #58e7d4;
-    transform: translateY(-2px);
 }
 
 .barra-progreso-fondo {
