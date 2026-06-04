@@ -220,7 +220,7 @@ body {
     
     /* Llamamos a la animación: nombre | duración | dirección | infinito */
     animation: movimientoColor 3s ease infinite;
-    box-shadow: 0 0 10px rgba(1, 204, 231, 0.89); /* Resplandor suave */
+    box-shadow: 0 0 10px rgba(43, 62, 65, 0.89); /* Resplandor suave */
 }
 
 /* Definición del movimiento */
