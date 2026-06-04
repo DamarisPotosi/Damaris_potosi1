@@ -240,6 +240,10 @@ body {
     border-radius: 8px;
     font-weight: 600;
     margin-bottom: 15px;
+
+    .bocuadro .habilidad-porcentaje:hover {
+    background-color: #58e7d4;
+    transform: translateY(-2px);
 }
 
 .barra-progreso-fondo {
