@@ -211,7 +211,7 @@ body {
     background: linear-gradient(
         270deg, 
         #0FA3B1, 
-        #2A9D8F, 
+        #25a797, 
         #0b6169
     );
     background-size: 400% 400%; /* Tamaño grande para que el gradiente se mueva */
@@ -253,7 +253,7 @@ body {
 .habilidad-porcentaje {
     display: block;
     text-align: right;
-    color: #264653;
+    color: #2a82a5;
     font-weight: 700;
     font-size: 0.9rem;
 }
